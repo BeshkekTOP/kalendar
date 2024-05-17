@@ -1,0 +1,32 @@
+﻿<Page x:Class="kalendarik.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:kalendarik"
+      mc:Ignorable="d" 
+      Title="Page1" Background="Wheat" Height="600" Width="500">
+
+    <Grid>
+       
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="datemama"  HorizontalAlignment="Center"  TextWrapping="Wrap"  FontSize="30"  Height="44" Width="334"  Grid.ColumnSpan="6" TextAlignment="Center"/>
+            <Button Content="&lt;" Grid.Row="0" Grid.Column="0"  Background="Brown"   HorizontalAlignment="Left" Width="60" Margin="20"/>
+            <Button Content="&gt;" Margin="10"   Width="60" Background="Brown" Grid.Column="6" Click="Button_Click" />
+        </Grid>
+        <WrapPanel Grid.Row="1"  x:Name="sigmaPanel"  >
+            
+        </WrapPanel>
+
+    </Grid>
+</Page>
